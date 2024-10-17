@@ -65,6 +65,7 @@ app.get('/about', (request, response)=>{
     response.send("THIS IS A WEBSITE ABOUT UNCONVENTIONAL, MALFUNCTIONED PUPPETS, DOLLS, AND GYNOIDS. THIS IS WHERE CONTROL MEETS DISRUPTION. EACH GLITCH IS A LEAP TOWARD LIBERATION.");
 })
 app.get('/puppets', (request, response)=>{
+    console.log(request.query);
     response.json(glitchPuppets);
 })
 
